@@ -47,10 +47,32 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             height: 20vh;
             background-color: rgba(0,0,0,0.85);
             width: 100%;
+        }
+
+        header ul.tabs {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            list-style: none;
+        }
+
+        header ul.tabs > li {
+            padding: 2rem;
+            font-size: 2.5rem;
+        }
+
+        header ul.tabs > li:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 2rem;
         }
 
         .foreground-container {
@@ -72,6 +94,35 @@
             margin-bottom: 2rem;
             margin-top: 2rem;
         }
+
+        footer {
+          font-size: 1.5rem;
+          height: 5vh;
+          flex-direction: row;
+          color: white;
+          display: flex;
+          justify-content: center;
+          background-color: rgba(0,0,0,0.45);
+          width: 100%;
+          align-items: center;
+          font-size: 1.7rem;
+        }
+
+        .copyright {
+            margin-right: 1rem;
+        }
+
+        @media only screen and (min-width: 450px) {
+            .foreground-container h2, p {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .foreground-container h2, p {
+                font-size: 2.4rem;
+            }
+        }
         
        
       
@@ -82,6 +133,11 @@
         <div class="background-container">
             <header>
                     <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
+                    <ul class="tabs">
+                        <li class="home">Home</li>
+                        <li class="menu">Menu</li>
+                        <li class="contact">Contact</li>
+                    </ul>
                 </header>
             <div class="foreground-container">
                 <h2>The best tacos north of the border!</h2>
@@ -91,7 +147,8 @@
                 <p> ¡Visítanos lunes a domingo de 6pm a 2am! </p>
             </div>
             <footer>
-                Copyright © 2021 mattdimicelli 
+                <span class="copyright">Copyright © 2021 mattdimicelli</span>
+                <a href="https://github.com/mattdimicelli"><img src="../images/GitHub-Mark-32px.png" alt="github logo" /></a>
             </footer>
         </div>
     </div>
