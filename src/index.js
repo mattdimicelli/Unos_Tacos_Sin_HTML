@@ -1,4 +1,3 @@
-import renderTacos from './page-load';
+import renderMainPage from "./main-page";
 
-renderTacos();
-
+renderMainPage();

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1.0"
+    />
+    <title>El Gringo's MEXICAN Tacos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .foreground-container h2, p {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .background-container {
+            background-image: url('../images/taco-plancha.jpg');
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+            background-color: rgba(0,0,0,0.85);
+            width: 100%;
+        }
+
+        .foreground-container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+            background-color: rgba(0,0,0,0.45);
+            max-width: 650px;
+            align-items: center;
+            color: white;
+            width: 100vw;
+            text-align: center;
+            padding: 3rem;
+        }
+
+        .foreground-container img {
+            max-width: 300px;
+            width: 50%;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        
+       
+      
+    </style>
+  </head>
+  <body>
+    <div id="content">
+        <div class="background-container">
+            <header>
+                    <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
+                </header>
+            <div class="foreground-container">
+                <h2>The best tacos north of the border!</h2>
+                <h2>¡Los mejores tacos en el otro lado!</h2>
+                <img src="../images/flags.png" alt="an american flag on the left and a mexican flag on the right" />
+                <p>Visit us all week from 6pm to 2am!</p>
+                <p> ¡Visítanos lunes a domingo de 6pm a 2am! </p>
+            </div>
+            <footer>
+                Copyright © 2021 mattdimicelli 
+            </footer>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
