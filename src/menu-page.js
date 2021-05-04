@@ -48,7 +48,7 @@ const renderMenuPage = () => {
     </div>
     <footer>
         <span class="copyright">Copyright © 2021 mattdimicelli</span>
-        <a href="https://github.com/mattdimicelli"><img src="/images/GitHub-Mark-32px.png" alt="github logo" /></a>
+        <a href="https://github.com/mattdimicelli"><img src="/restaurant/images/GitHub-Mark-32px.png" alt="github logo" /></a>
     </footer>
 </div>`;
 
