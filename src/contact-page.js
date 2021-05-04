@@ -12,7 +12,7 @@ const renderContactPage = () => {
     <div class="foreground-container">
         <h2><span>Phone:</span> 561-123-3456</h2>
         <h2><span>Address:</span> On the beach at the end of S 39th St in Mexico Beach, FL, 32456</h2> 
-        <img src="../images/mexico-beach.png" />
+        <img src="images/mexico-beach.png" />
     </div>
     <footer>
         <span class="copyright">Copyright © 2021 mattdimicelli</span>
