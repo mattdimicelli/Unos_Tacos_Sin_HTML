@@ -10,35 +10,35 @@ const renderMenuPage = () => {
         </header>
     <div class="foreground-container">
         <div class="taco">
-            <img src="/images/carnitas.jpg" alt="carnitas taco"  />
+            <img src="/restaurant/images/carnitas.jpg" alt="carnitas taco"  />
             <h2>Carnitas</h2>
         </div>
         <div class ="taco">
-            <img src="/images/chorizo.jpg" alt="chorizo taco" />
+            <img src="/restaurant/images/chorizo.jpg" alt="chorizo taco" />
             <h2>Chorizo</h2>
         </div>
         <div class="taco">
-            <img src="/images/suadero.jpg" alt="saudero taco" />
+            <img src="/restaurant/images/suadero.jpg" alt="saudero taco" />
             <h2>Suadero</h2>
         </div>
         <div class="taco">
-            <img src="/images/pollo.jpg" alt="pollo taco" />
+            <img src="/restaurant/images/pollo.jpg" alt="pollo taco" />
             <h2>Pollo</h2>
         </div>
         <div class="taco">
-            <img src="/images/tripa.jpg" alt="tripa taco" />
+            <img src="/restaurant/images/tripa.jpg" alt="tripa taco" />
             <h2>Tripa</h2>
         </div>
         <div class="taco">
-            <img src="/images/al-pastor.jpg" alt="al pastor taco" />
+            <img src="/restaurant/images/al-pastor.jpg" alt="al pastor taco" />
             <h2>Al Pastor</h2>
         </div>
         <div class="taco">
-            <img src="/images/asada.jpg" alt="asada taco" />
+            <img src="/restaurant/images/asada.jpg" alt="asada taco" />
             <h2>Asada</h2>
         </div>
         <div class="taco">
-            <img src="/images/buche.png" alt="buche taco" />
+            <img src="/restaurant/images/buche.png" alt="buche taco" />
             <h2>Buche</h2>
         </div>
     
@@ -76,7 +76,7 @@ const renderMenuPage = () => {
     }
 
     .background-container {
-        background-image: url('/images/taco-plancha.jpg');
+        background-image: url('restaurant/images/taco-plancha.jpg');
         background-size:cover;
         position: absolute;
         left: 0;
