@@ -12,13 +12,13 @@ const renderMainPage = () => {
   <div class="foreground-container">
       <h2>The best tacos north of the border!</h2>
       <h2>¡Los mejores tacos en el otro lado!</h2>
-      <img src="../images/flags.png" alt="an american flag on the left and a mexican flag on the right" />
+      <img src="/images/flags.png" alt="an american flag on the left and a mexican flag on the right" />
       <p>Visit us all week from 6pm to 2am!</p>
       <p> ¡Visítanos lunes a domingo de 6pm a 2am! </p>
   </div>
   <footer>
       <span class="copyright">Copyright © 2021 mattdimicelli</span>
-      <a href="https://github.com/mattdimicelli"><img src="../images/GitHub-Mark-32px.png" alt="github logo" /></a>
+      <a href="https://github.com/mattdimicelli"><img src="/images/GitHub-Mark-32px.png" alt="github logo" /></a>
   </footer>
 </div>
 `;
@@ -48,7 +48,7 @@ p {
 }
 
 .background-container {
-  background-image: url('../images/taco-plancha.jpg');
+  background-image: url('/images/taco-plancha.jpg');
   background-size: cover;
   height: 100vh;
   position: absolute;

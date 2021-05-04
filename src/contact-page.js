@@ -12,11 +12,11 @@ const renderContactPage = () => {
     <div class="foreground-container">
         <h2><span>Phone:</span> 561-123-3456</h2>
         <h2><span>Address:</span> On the beach at the end of S 39th St in Mexico Beach, FL, 32456</h2> 
-        <img src="/restaurant/images/mexico-beach.png" />
+        <img src="/images/mexico-beach.png" />
     </div>
     <footer>
         <span class="copyright">Copyright © 2021 mattdimicelli</span>
-        <a href="https://github.com/mattdimicelli"><img src="../images/GitHub-Mark-32px.png" alt="github logo" /></a>
+        <a href="https://github.com/mattdimicelli"><img src="/images/GitHub-Mark-32px.png" alt="github logo" /></a>
     </footer>
 </div>`;
   const contentDiv = document.querySelector("div#content");
@@ -50,7 +50,7 @@ p {
 }
 
 .background-container {
-    background-image: url('../images/taco-plancha.jpg');
+    background-image: url('/images/taco-plancha.jpg');
     background-size: cover;
     height: 100vh;
     position: absolute;
