@@ -1,14 +1,151 @@
 const renderMainPage = () => {
   const html = `
-
-    <img src="../images/taco-cart.jpg" />
-    <h1>El Gringo's MEXICAN Tacos</h1>
-    <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet arcu nisl. Cras lorem mauris, efficitur at dapibus sit amet, porta ut justo. Nulla rhoncus ex sapien, at cursus eros bibendum eget. Curabitur tortor lectus, ultrices sit amet purus vitae, ultricies tempor sem. Nam molestie nisl ut tempor tincidunt. Morbi lacinia a ligula bibendum rutrum. Proin a ligula eu sem blandit vulputate. Integer tempus ipsum ac libero finibus faucibus. Fusce purus augue, posuere nec leo sit amet, fermentum venenatis tortor. Etiam pharetra posuere ante, eget aliquet augue tincidunt vel. Nulla tristique elit odio, quis bibendum nibh pulvinar eget. Suspendisse et imperdiet velit. Aliquam vestibulum est neque, ac lobortis erat finibus quis. Pellentesque porttitor nunc eget enim egestas, vel commodo nunc efficitur. Aliquam vitae dolor congue, fringilla nisi id, mollis neque. Maecenas a hendrerit nibh.</p>
-    <p>Nulla quis libero vel nibh euismod porttitor. Sed volutpat varius diam, convallis suscipit lectus. Maecenas in laoreet leo. Etiam scelerisque, purus et bibendum cursus, libero neque placerat elit, vitae finibus lectus purus a elit. Phasellus non libero sed orci vestibulum aliquam. Donec mi mauris, ultrices eget odio sed, euismod consectetur dolor. Integer id ex quis tortor commodo scelerisque ac non nisl. Morbi convallis lorem nunc, rhoncus commodo enim finibus sit amet. Curabitur ullamcorper lorem quis sagittis accumsan. Cras vel velit tempor, venenatis velit elementum, egestas dolor. Mauris risus dui, pretium ac finibus a, semper bibendum velit. Pellentesque vel ultrices lectus. Praesent ut magna varius, fermentum lectus sit amet, molestie ligula. Nam id feugiat ligula. Suspendisse a dolor in nisi vehicula bland</p>
-    </div>`;
+  <div class="background-container">
+  <header>
+          <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
+          <ul class="tabs">
+              <li class="home">Home</li>
+              <li class="menu">Menu</li>
+              <li class="contact">Contact</li>
+          </ul>
+      </header>
+  <div class="foreground-container">
+      <h2>The best tacos north of the border!</h2>
+      <h2>¡Los mejores tacos en el otro lado!</h2>
+      <img src="../images/flags.png" alt="an american flag on the left and a mexican flag on the right" />
+      <p>Visit us all week from 6pm to 2am!</p>
+      <p> ¡Visítanos lunes a domingo de 6pm a 2am! </p>
+  </div>
+  <footer>
+      <span class="copyright">Copyright © 2021 mattdimicelli</span>
+      <a href="https://github.com/mattdimicelli"><img src="../images/GitHub-Mark-32px.png" alt="github logo" /></a>
+  </footer>
+</div>
+`;
 
   const contentDiv = document.querySelector("div#content");
   contentDiv.innerHTML = html;
+
+  const style = `
+  * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.foreground-container h2, p {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.background-container {
+  background-image: url('../images/taco-plancha.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+  background-color: rgba(0,0,0,0.85);
+  width: 100%;
+}
+
+header ul.tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+}
+
+header ul.tabs > li {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+header ul.tabs > li:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.foreground-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  background-color: rgba(0,0,0,0.60);
+  max-width: 650px;
+  align-items: center;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  padding: 3rem;
+}
+
+.foreground-container img {
+  max-width: 300px;
+  width: 50%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+footer {
+font-size: 1.5rem;
+height: 5vh;
+flex-direction: row;
+color: white;
+display: flex;
+justify-content: center;
+background-color: rgba(0,0,0,0.60);
+width: 100%;
+align-items: center;
+font-size: 1.7rem;
+}
+
+.copyright {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 450px) {
+  .foreground-container h2, p {
+      font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .foreground-container h2, p {
+      font-size: 2.4rem;
+  }
+}`;
+
+  const documentStyles = document.querySelector("style");
+  documentStyles.innerHTML = style;
 };
 
 export default renderMainPage;
