@@ -50,7 +50,7 @@ p {
 }
 
 .background-container {
-    background-image: url('/restaurant/images/taco-plancha.jpg');
+    background-image: url('/images/taco-plancha.jpg');
     background-size: cover;
     height: 100vh;
     position: absolute;
