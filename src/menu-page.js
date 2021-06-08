@@ -76,7 +76,7 @@ const renderMenuPage = () => {
     }
 
     .background-container {
-        background-image: url('https://mattdimicelli.github.io/restaurant/images/taco-plancha.jpg');
+        background-image: url('/restaurant/images/taco-plancha.jpg');
         background-size:cover;
         position: absolute;
         left: 0;
