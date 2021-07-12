@@ -75,7 +75,7 @@ const renderContactPage = () => {
     githubLink.append(githubLogo);
     footer.append(githubLink);
 
-    const mainBackgroundContainer = document.querySelector("div#background-container");
+    const mainBackgroundContainer = document.querySelector(".background-container");
     mainBackgroundContainer.replaceWith(backgroundContainer);
 
   const style = `

@@ -78,7 +78,7 @@ const renderMainPage = () => {
 
  
 
-  const mainBackgroundContainer = document.querySelector("div#background-container");
+  const mainBackgroundContainer = document.querySelector(".background-container");
   mainBackgroundContainer.replaceWith(backgroundContainer);
 
   const style = `
