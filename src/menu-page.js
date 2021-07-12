@@ -1,59 +1,211 @@
+
+
 const renderMenuPage = () => {
-  const html = ` <div class="background-container">
-    <header>
-            <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
-            <ul class="tabs">
-                <li class="home">Home</li>
-                <li class="menu">Menu</li>
-                <li class="contact">Contact</li>
-            </ul>
-        </header>
-    <div class="foreground-container">
-        <div class="taco">
-            <img src="/restaurant/images/carnitas.jpg" alt="carnitas taco"  />
-            <h2>Carnitas</h2>
-        </div>
-        <div class ="taco">
-            <img src="/restaurant/images/chorizo.jpg" alt="chorizo taco" />
-            <h2>Chorizo</h2>
-        </div>
-        <div class="taco">
-            <img src="/restaurant/images/suadero.jpg" alt="saudero taco" />
-            <h2>Suadero</h2>
-        </div>
-        <div class="taco">
-            <img src="/restaurant/images/pollo.jpg" alt="pollo taco" />
-            <h2>Pollo</h2>
-        </div>
-        <div class="taco">
-            <img src="/restaurant/images/tripa.jpg" alt="tripa taco" />
-            <h2>Tripa</h2>
-        </div>
-        <div class="taco">
-            <img src="/restaurant/images/al-pastor.jpg" alt="al pastor taco" />
-            <h2>Al Pastor</h2>
-        </div>
-        <div class="taco">
-            <img src="/restaurant/images/asada.jpg" alt="asada taco" />
-            <h2>Asada</h2>
-        </div>
-        <div class="taco">
-            <img src="/restaurant/images/buche.png" alt="buche taco" />
-            <h2>Buche</h2>
-        </div>
+    const backgroundContainer = document.createElement('div');
+    backgroundContainer.classList.add('background-container');
+    const header = document.createElement('header');
+    backgroundContainer.append(header);
+    const h1 = document.createElement('h1');
+    header.append(h1);
+    const span = document.createElement('span');
+    span.style.color = "red";
+    span.innerText = "El ";
+    h1.append(span);
+    const griSpan = document.createElement('span');
+    griSpan.style.color = 'white';
+    griSpan.innerText = 'Gri';
+    h1.append(griSpan);
+    const ngoSpan = document.createElement('span');
+    ngoSpan.style.color = 'blue';
+    ngoSpan.innerText = "ngo's ";
+    h1.append(ngoSpan);
+    const mexiSpan = document.createElement('span');
+    mexiSpan.style.color = 'green';
+    mexiSpan.innerText = 'MEXI';
+    h1.append(mexiSpan);
+    const canSpan = document.createElement('span');
+    canSpan.style.color = 'white';
+    canSpan.innerText = 'CAN ';
+    h1.append(canSpan);
+    const tacosSpan = document.createElement('span');
+    tacosSpan.style.color = 'red';
+    tacosSpan.innerText = 'Tacos';
+    h1.append(tacosSpan);
+    const tabs = document.createElement('ul');
+    tabs.classList.add('tabs');
+    header.append(tabs);
+    const home = document.createElement('li');
+    home.classList.add('home');
+    home.textContent = 'Home';
+    tabs.append(home);
+    const menu = document.createElement('li');
+    menu.textContent = 'Menu';
+    menu.classList.add('menu');
+    tabs.append(menu);
+    const contact = document.createElement('li');
+    contact.classList.add('contact');
+    contact.textContent = 'Contact';
+    tabs.append(contact);
+
+    const foregroundContainer = document.createElement('div');
+    foregroundContainer.classList.add('foreground-container');
+    backgroundContainer.append(foregroundContainer);
+
+    const carnitasDiv = document.createElement('div');
+    carnitasDiv.classList.add('taco');
+    foregroundContainer.append(carnitasDiv);
+    const carnitas = document.createElement('img');
+    carnitas.src = "/restaurant/images/carnitas.jpg";
+    carnitas.alt = "carnitas taco";
+    carnitasDiv.append(carnitas);
+    const carnitasH2 = document.createElement('h2');
+    carnitasH2.textContent = 'Carnitas';
+    carnitasDiv.append(carnitasH2);
+
+    const chorizoDiv = document.createElement('div');
+    chorizoDiv.classList.add('taco');
+    foregroundContainer.append(chorizoDiv);
+    const chorizo = document.createElement('img');
+    chorizo.alt = "chorizo taco";
+    chorizo.src = '/restaurant/images/chorizo.jpg';
+    const chorizoH2 = document.createElement('h2');
+    chorizoH2.textContent = 'Chorizo';
+    chorizoDiv.append(chorizo, chorizoH2);
+
+    const suaderoDiv = document.createElement('div');
+    suaderoDiv.classList.add('taco');
+    foregroundContainer.append(suaderoDiv);
+    const suadero = document.createElement('img');
+    suadero.src = "/restaurant/images/suadero.jpg";
+    suadero.alt = "suadero taco";
+    const suaderoH2 = document.createElement('h2');
+    suaderoH2.textContent = "Suadero";
+    suaderoDiv.append(suadero, suaderoH2);
+
+    const polloDiv = document.createElement('div');
+    polloDiv.classList.add('taco');
+    foregroundContainer.append(polloDiv);
+    const pollo = document.createElement('img');
+    pollo.src = "/restaurant/images/pollo.jpg";
+    pollo.alt = "pollo taco";
+    const polloH2 = document.createElement('h2');
+    polloH2.textContent = "Pollo";
+    polloDiv.append(pollo, polloH2);
+
+    const tripaDiv = document.createElement('div');
+    tripaDiv.classList.add('taco');
+    foregroundContainer.append(tripaDiv);
+    const tripa = document.createElement('img');
+    tripa.src = "/restaurant/images/tripa.jpg";
+    pollo.alt = "tripa taco";
+    const tripaH2 = document.createElement('h2');
+    tripaH2.textContent = "Tripa";
+    tripaDiv.append(tripa, tripaH2);
+
+    const alPastorDiv = document.createElement('div');
+    alPastorDiv.classList.add('taco');
+    foregroundContainer.append(alPastorDiv);
+    const alPastor = document.createElement('img');
+    alPastor.src = "/restaurant/images/al-pastor.jpg";
+    alPastor.alt = "al pastor taco";
+    const alPastorH2 = document.createElement('h2');
+    alPastorH2.textContent = "Al Pastor";
+    alPastorDiv.append(alPastor, alPastorH2);
+
+    const asadaDiv = document.createElement('div');
+    asadaDiv.classList.add('taco');
+    foregroundContainer.append(asadaDiv);
+    const asada = document.createElement('img');
+    asada.src = "/restaurant/images/asada.jpg";
+    asada.alt = "asada taco";
+    const asadaH2 = document.createElement('h2');
+    asadaH2.textContent = "Asada";
+    asadaDiv.append(asada, asadaH2);
+
+    const bucheDiv = document.createElement('div');
+    bucheDiv.classList.add('taco');
+    foregroundContainer.append(bucheDiv);
+    const buche = document.createElement('img');
+    buche.src = "/restaurant/images/buche.jpg";
+    buche.alt = "buche taco";
+    const bucheH2 = document.createElement('h2');
+    bucheH2.textContent = "Buche";
+    bucheDiv.append(buche, bucheH2);
+
+    const footer = document.createElement('footer');
+    const copyright = document.createElement('span');
+    copyright.classList.add('copyright');
+    copyright.textContent = "Copyright © 2021 mattdimicelli";
+    footer.append(copyright);
+    backgroundContainer.append(footer);
+    const githubLink = document.createElement('a');
+    githubLink.href = "https://github.com/mattdimicelli";
+    const githubLogo = document.createElement('img');
+    githubLogo.src = "/restaurant/images/GitHub-Mark-32px.png";
+    githubLogo.alt = "github logo";
+    githubLink.append(githubLogo);
+    footer.append(githubLink);
+
+
+
+
+
+
+//   const html = ` <div class="background-container">
+//     <header>
+//             <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
+//             <ul class="tabs">
+//                 <li class="home">Home</li>
+//                 <li class="menu">Menu</li>
+//                 <li class="contact">Contact</li>
+//             </ul>
+//         </header>
+//     <div class="foreground-container">
+//         <div class="taco">
+//             <img src="/restaurant/images/carnitas.jpg" alt="carnitas taco"  />
+//             <h2>Carnitas</h2>
+//         </div>
+//         <div class ="taco">
+//             <img src="/restaurant/images/chorizo.jpg" alt="chorizo taco" />
+//             <h2>Chorizo</h2>
+//         </div>
+//         <div class="taco">
+//             <img src="/restaurant/images/suadero.jpg" alt="saudero taco" />
+//             <h2>Suadero</h2>
+//         </div>
+//         <div class="taco">
+//             <img src="/restaurant/images/pollo.jpg" alt="pollo taco" />
+//             <h2>Pollo</h2>
+//         </div>
+//         <div class="taco">
+//             <img src="/restaurant/images/tripa.jpg" alt="tripa taco" />
+//             <h2>Tripa</h2>
+//         </div>
+//         <div class="taco">
+//             <img src="/restaurant/images/al-pastor.jpg" alt="al pastor taco" />
+//             <h2>Al Pastor</h2>
+//         </div>
+//         <div class="taco">
+//             <img src="/restaurant/images/asada.jpg" alt="asada taco" />
+//             <h2>Asada</h2>
+//         </div>
+//         <div class="taco">
+//             <img src="/restaurant/images/buche.png" alt="buche taco" />
+//             <h2>Buche</h2>
+//         </div>
     
     
 
         
-    </div>
-    <footer>
-        <span class="copyright">Copyright © 2021 mattdimicelli</span>
-        <a href="https://github.com/mattdimicelli"><img src="/restaurant/images/GitHub-Mark-32px.png" alt="github logo" /></a>
-    </footer>
-</div>`;
+//     </div>
+//     <footer>
+//         <span class="copyright">Copyright © 2021 mattdimicelli</span>
+//         <a href="https://github.com/mattdimicelli"><img src="/restaurant/images/GitHub-Mark-32px.png" alt="github logo" /></a>
+//     </footer>
+// </div>`;
 
   const contentDiv = document.querySelector("div#content");
-  contentDiv.innerHTML = html;
+  contentDiv.append(backgroundContainer);
 
   const style = `     * {
         box-sizing: border-box;
@@ -209,11 +361,11 @@ const renderMenuPage = () => {
     taco.addEventListener("mouseout", makeDivBlack);
   }
 
-  function makeDivWhite(e) {
+  function makeDivWhite() {
     this.classList.add("white");
   }
 
-  function makeDivBlack(e) {
+  function makeDivBlack() {
     this.classList.remove("white");
   }
 };
