@@ -58,6 +58,10 @@ const renderContactPage = () => {
     const addressSpan = document.createElement('span');
     addressSpan.textContent = "Address:";
     addressH2.prepend(addressSpan);
+    const map = document.createElement('img');
+    map.src = "/restaurant/images/mexico-beach.png";
+    foregroundContainer.append(phoneH2,addressH2,map);
+    
 
 
 
