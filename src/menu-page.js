@@ -147,63 +147,6 @@ const renderMenuPage = () => {
     footer.append(githubLink);
 
 
-
-
-
-
-//   const html = ` <div class="background-container">
-//     <header>
-//             <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
-//             <ul class="tabs">
-//                 <li class="home">Home</li>
-//                 <li class="menu">Menu</li>
-//                 <li class="contact">Contact</li>
-//             </ul>
-//         </header>
-//     <div class="foreground-container">
-//         <div class="taco">
-//             <img src="/restaurant/images/carnitas.jpg" alt="carnitas taco"  />
-//             <h2>Carnitas</h2>
-//         </div>
-//         <div class ="taco">
-//             <img src="/restaurant/images/chorizo.jpg" alt="chorizo taco" />
-//             <h2>Chorizo</h2>
-//         </div>
-//         <div class="taco">
-//             <img src="/restaurant/images/suadero.jpg" alt="saudero taco" />
-//             <h2>Suadero</h2>
-//         </div>
-//         <div class="taco">
-//             <img src="/restaurant/images/pollo.jpg" alt="pollo taco" />
-//             <h2>Pollo</h2>
-//         </div>
-//         <div class="taco">
-//             <img src="/restaurant/images/tripa.jpg" alt="tripa taco" />
-//             <h2>Tripa</h2>
-//         </div>
-//         <div class="taco">
-//             <img src="/restaurant/images/al-pastor.jpg" alt="al pastor taco" />
-//             <h2>Al Pastor</h2>
-//         </div>
-//         <div class="taco">
-//             <img src="/restaurant/images/asada.jpg" alt="asada taco" />
-//             <h2>Asada</h2>
-//         </div>
-//         <div class="taco">
-//             <img src="/restaurant/images/buche.png" alt="buche taco" />
-//             <h2>Buche</h2>
-//         </div>
-    
-    
-
-        
-//     </div>
-//     <footer>
-//         <span class="copyright">Copyright © 2021 mattdimicelli</span>
-//         <a href="https://github.com/mattdimicelli"><img src="/restaurant/images/GitHub-Mark-32px.png" alt="github logo" /></a>
-//     </footer>
-// </div>`;
-
   const contentDiv = document.querySelector("div#content");
   contentDiv.append(backgroundContainer);
 

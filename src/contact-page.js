@@ -1,4 +1,80 @@
 const renderContactPage = () => {
+    const backgroundContainer = document.createElement('div');
+    backgroundContainer.classList.add('background-container');
+    const header = document.createElement('header');
+    backgroundContainer.append(header);
+    const h1 = document.createElement('h1');
+    header.append(h1);
+    const span = document.createElement('span');
+    span.style.color = "red";
+    span.innerText = "El ";
+    h1.append(span);
+    const griSpan = document.createElement('span');
+    griSpan.style.color = 'white';
+    griSpan.innerText = 'Gri';
+    h1.append(griSpan);
+    const ngoSpan = document.createElement('span');
+    ngoSpan.style.color = 'blue';
+    ngoSpan.innerText = "ngo's ";
+    h1.append(ngoSpan);
+    const mexiSpan = document.createElement('span');
+    mexiSpan.style.color = 'green';
+    mexiSpan.innerText = 'MEXI';
+    h1.append(mexiSpan);
+    const canSpan = document.createElement('span');
+    canSpan.style.color = 'white';
+    canSpan.innerText = 'CAN ';
+    h1.append(canSpan);
+    const tacosSpan = document.createElement('span');
+    tacosSpan.style.color = 'red';
+    tacosSpan.innerText = 'Tacos';
+    h1.append(tacosSpan);
+    const tabs = document.createElement('ul');
+    tabs.classList.add('tabs');
+    header.append(tabs);
+    const home = document.createElement('li');
+    home.classList.add('home');
+    home.textContent = 'Home';
+    tabs.append(home);
+    const menu = document.createElement('li');
+    menu.textContent = 'Menu';
+    menu.classList.add('menu');
+    tabs.append(menu);
+    const contact = document.createElement('li');
+    contact.classList.add('contact');
+    contact.textContent = 'Contact';
+    tabs.append(contact);
+
+    const foregroundContainer = document.createElement('div');
+    foregroundContainer.classList.add('foreground-container');
+    backgroundContainer.append(foregroundContainer);
+    const phoneH2 = document.createElement('h2');
+    phoneH2.textContent = "561-123-3456";
+    const phoneSpan = document.createElement('span');
+    phoneSpan.textContent = "Phone:";
+    phoneH2.prepend(phoneSpan);
+    const addressH2 = document.createElement('h2');
+    addressH2.textContent = " On the beach at the end of S 39th St in Mexico Beach, FL, 32456";
+    const addressSpan = document.createElement('span');
+    addressSpan.textContent = "Address:";
+    addressH2.prepend(addressSpan);
+
+
+
+    const footer = document.createElement('footer');
+    const copyright = document.createElement('span');
+    copyright.classList.add('copyright');
+    copyright.textContent = "Copyright © 2021 mattdimicelli";
+    footer.append(copyright);
+    backgroundContainer.append(footer);
+    const githubLink = document.createElement('a');
+    githubLink.href = "https://github.com/mattdimicelli";
+    const githubLogo = document.createElement('img');
+    githubLogo.src = "/restaurant/images/GitHub-Mark-32px.png";
+    githubLogo.alt = "github logo";
+    githubLink.append(githubLogo);
+    footer.append(githubLink);
+
   const html = `
     <div class="background-container">
     <header>

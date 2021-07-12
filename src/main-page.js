@@ -1,27 +1,82 @@
 const renderMainPage = () => {
-  const html = `
-  <div class="background-container">
-  <header>
-          <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
-          <ul class="tabs">
-              <li class="home">Home</li>
-              <li class="menu">Menu</li>
-              <li class="contact">Contact</li>
-          </ul>
-      </header>
-  <div class="foreground-container">
-      <h2>The best tacos north of the border!</h2>
-      <h2>¡Los mejores tacos en el otro lado!</h2>
-      <img src="/restaurant/images/flags.png" alt="an american flag on the left and a mexican flag on the right" />
-      <p>Visit us all week from 6pm to 2am!</p>
-      <p> ¡Visítanos lunes a domingo de 6pm a 2am! </p>
-  </div>
-  <footer>
-      <span class="copyright">Copyright © 2021 mattdimicelli</span>
-      <a href="https://github.com/mattdimicelli"><img src="/restaurant/images/GitHub-Mark-32px.png" alt="github logo" /></a>
-  </footer>
-</div>
-`;
+  const backgroundContainer = document.createElement('div');
+  backgroundContainer.classList.add('background-container');
+  const header = document.createElement('header');
+  backgroundContainer.append(header);
+  const h1 = document.createElement('h1');
+  header.append(h1);
+  const span = document.createElement('span');
+  span.style.color = "red";
+  span.innerText = "El ";
+  h1.append(span);
+  const griSpan = document.createElement('span');
+  griSpan.style.color = 'white';
+  griSpan.innerText = 'Gri';
+  h1.append(griSpan);
+  const ngoSpan = document.createElement('span');
+  ngoSpan.style.color = 'blue';
+  ngoSpan.innerText = "ngo's ";
+  h1.append(ngoSpan);
+  const mexiSpan = document.createElement('span');
+  mexiSpan.style.color = 'green';
+  mexiSpan.innerText = 'MEXI';
+  h1.append(mexiSpan);
+  const canSpan = document.createElement('span');
+  canSpan.style.color = 'white';
+  canSpan.innerText = 'CAN ';
+  h1.append(canSpan);
+  const tacosSpan = document.createElement('span');
+  tacosSpan.style.color = 'red';
+  tacosSpan.innerText = 'Tacos';
+  h1.append(tacosSpan);
+  const tabs = document.createElement('ul');
+  tabs.classList.add('tabs');
+  header.append(tabs);
+  const home = document.createElement('li');
+  home.classList.add('home');
+  home.textContent = 'Home';
+  tabs.append(home);
+  const menu = document.createElement('li');
+  menu.textContent = 'Menu';
+  menu.classList.add('menu');
+  tabs.append(menu);
+  const contact = document.createElement('li');
+  contact.classList.add('contact');
+  contact.textContent = 'Contact';
+  tabs.append(contact);
+
+  const foregroundContainer = document.createElement('div');
+  foregroundContainer.classList.add('foreground-container');
+  backgroundContainer.append(foregroundContainer);
+  const englishH2 = document.createElement('h2');
+  englishH2.textContent = "The best tacos north of the border!";
+  const spanishH2 = document.createElement('h2');
+  spanishH2.textContent = "¡Los mejores tacos en el otro lado!";
+  const flags = document.createElement('img');
+  flags.src = "/restaurant/images/flags.png";
+  flags.alt = "an american flag on the left and a mexican flag on the right";
+  const englishVisit = document.createElement('p');
+  englishVisit.textContent = "Visit us all week from 6pm to 2am!";
+  const spanishVisit = document.createElement('p');
+  spanishVisit.textContent = " ¡Visítanos lunes a domingo de 6pm a 2am! ";
+  foregroundContainer.append(englishH2, spanishH2, flags, englishVisit, spanishVisit);
+
+  const footer = document.createElement('footer');
+    const copyright = document.createElement('span');
+    copyright.classList.add('copyright');
+    copyright.textContent = "Copyright © 2021 mattdimicelli";
+    footer.append(copyright);
+    backgroundContainer.append(footer);
+    const githubLink = document.createElement('a');
+    githubLink.href = "https://github.com/mattdimicelli";
+    const githubLogo = document.createElement('img');
+    githubLogo.src = "/restaurant/images/GitHub-Mark-32px.png";
+    githubLogo.alt = "github logo";
+    githubLink.append(githubLogo);
+    footer.append(githubLink);
+
+
+ 
 
   const contentDiv = document.querySelector("div#content");
   contentDiv.innerHTML = html;
