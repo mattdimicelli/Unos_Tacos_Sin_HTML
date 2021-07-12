@@ -1,29 +1,29 @@
 const renderMainPage = () => {
 
-  //Actually only renders the main page's "foreground container".  
-  //The header and the footer do not need to be re-rendered since they 
-  //the same for every tab
-  const foregroundContainer = document.createElement('div');
-  foregroundContainer.classList.add('foreground-container');
-  const englishH2 = document.createElement('h2');
-  englishH2.textContent = "The best tacos north of the border!";
-  const spanishH2 = document.createElement('h2');
-  spanishH2.textContent = "¡Los mejores tacos en el otro lado!";
-  const flags = document.createElement('img');
-  flags.src = "/restaurant/images/flags.png";
-  flags.alt = "an american flag on the left and a mexican flag on the right";
-  const englishVisit = document.createElement('p');
-  englishVisit.textContent = "Visit us all week from 6pm to 2am!";
-  const spanishVisit = document.createElement('p');
-  spanishVisit.textContent = " ¡Visítanos lunes a domingo de 6pm a 2am! ";
-  foregroundContainer.append(englishH2, spanishH2, flags, englishVisit, spanishVisit);
+    //Actually only renders the main page's "foreground container".  
+    //The header and the footer do not need to be re-rendered since they 
+    //the same for every tab
+    const foregroundContainer = document.createElement('div');
+    foregroundContainer.classList.add('foreground-container');
+    const englishH2 = document.createElement('h2');
+    englishH2.textContent = 'The best tacos north of the border!';
+    const spanishH2 = document.createElement('h2');
+    spanishH2.textContent = '¡Los mejores tacos en el otro lado!';
+    const flags = document.createElement('img');
+    flags.src = '/restaurant/images/flags.png';
+    flags.alt = 'an american flag on the left and a mexican flag on the right';
+    const englishVisit = document.createElement('p');
+    englishVisit.textContent = 'Visit us all week from 6pm to 2am!';
+    const spanishVisit = document.createElement('p');
+    spanishVisit.textContent = ' ¡Visítanos lunes a domingo de 6pm a 2am! ';
+    foregroundContainer.append(englishH2, spanishH2, flags, englishVisit, spanishVisit);
 
- 
-  
-  const emptyForegroundContainer = document.querySelector(".foreground-container");
-  emptyForegroundContainer.replaceWith(foregroundContainer);
 
-  const style = `
+
+    const emptyForegroundContainer = document.querySelector('.foreground-container');
+    emptyForegroundContainer.replaceWith(foregroundContainer);
+
+    const style = `
   * {
   box-sizing: border-box;
   padding: 0;
@@ -141,8 +141,8 @@ font-size: 1.7rem;
   }
 }`;
 
-  const documentStyles = document.querySelector("style");
-  documentStyles.innerHTML = style;
+    const documentStyles = document.querySelector('style');
+    documentStyles.innerHTML = style;
 };
 
 export default renderMainPage;

@@ -9,23 +9,23 @@ const renderContactPage = () => {
     foregroundContainer.classList.add('foreground-container');
 
     const phoneH2 = document.createElement('h2');
-    phoneH2.textContent = "561-123-3456";
+    phoneH2.textContent = '561-123-3456';
     const phoneSpan = document.createElement('span');
-    phoneSpan.textContent = "Phone:";
+    phoneSpan.textContent = 'Phone:';
     phoneH2.prepend(phoneSpan);
     const addressH2 = document.createElement('h2');
-    addressH2.textContent = " On the beach at the end of S 39th St in Mexico Beach, FL, 32456";
+    addressH2.textContent = ' On the beach at the end of S 39th St in Mexico Beach, FL, 32456';
     const addressSpan = document.createElement('span');
-    addressSpan.textContent = "Address:";
+    addressSpan.textContent = 'Address:';
     addressH2.prepend(addressSpan);
     const map = document.createElement('img');
-    map.src = "/restaurant/images/mexico-beach.png";
-    foregroundContainer.append(phoneH2,addressH2,map);
+    map.src = '/restaurant/images/mexico-beach.png';
+    foregroundContainer.append(phoneH2, addressH2, map);
 
 
- 
 
-    const emptyForegroundContainer = document.querySelector(".foreground-container");
+
+    const emptyForegroundContainer = document.querySelector('.foreground-container');
     emptyForegroundContainer.replaceWith(foregroundContainer);
 
     const style = `
@@ -160,8 +160,8 @@ footer {
 
 `;
 
-  const documentStyles = document.querySelector("style");
-  documentStyles.innerHTML = style;
+    const documentStyles = document.querySelector('style');
+    documentStyles.innerHTML = style;
 };
 
 export default renderContactPage;

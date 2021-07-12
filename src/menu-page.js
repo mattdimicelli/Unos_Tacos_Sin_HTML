@@ -11,8 +11,8 @@ const renderMenuPage = () => {
     const carnitasDiv = document.createElement('div');
     carnitasDiv.classList.add('taco');
     const carnitas = document.createElement('img');
-    carnitas.src = "/restaurant/images/carnitas.jpg";
-    carnitas.alt = "carnitas taco";
+    carnitas.src = '/restaurant/images/carnitas.jpg';
+    carnitas.alt = 'carnitas taco';
     const carnitasH2 = document.createElement('h2');
     carnitasH2.textContent = 'Carnitas';
     carnitasDiv.append(carnitas, carnitasH2);
@@ -20,7 +20,7 @@ const renderMenuPage = () => {
     const chorizoDiv = document.createElement('div');
     chorizoDiv.classList.add('taco');
     const chorizo = document.createElement('img');
-    chorizo.alt = "chorizo taco";
+    chorizo.alt = 'chorizo taco';
     chorizo.src = '/restaurant/images/chorizo.jpg';
     const chorizoH2 = document.createElement('h2');
     chorizoH2.textContent = 'Chorizo';
@@ -29,61 +29,61 @@ const renderMenuPage = () => {
     const suaderoDiv = document.createElement('div');
     suaderoDiv.classList.add('taco');
     const suadero = document.createElement('img');
-    suadero.src = "/restaurant/images/suadero.jpg";
-    suadero.alt = "suadero taco";
+    suadero.src = '/restaurant/images/suadero.jpg';
+    suadero.alt = 'suadero taco';
     const suaderoH2 = document.createElement('h2');
-    suaderoH2.textContent = "Suadero";
+    suaderoH2.textContent = 'Suadero';
     suaderoDiv.append(suadero, suaderoH2);
 
     const polloDiv = document.createElement('div');
     polloDiv.classList.add('taco');
     const pollo = document.createElement('img');
-    pollo.src = "/restaurant/images/pollo.jpg";
-    pollo.alt = "pollo taco";
+    pollo.src = '/restaurant/images/pollo.jpg';
+    pollo.alt = 'pollo taco';
     const polloH2 = document.createElement('h2');
-    polloH2.textContent = "Pollo";
+    polloH2.textContent = 'Pollo';
     polloDiv.append(pollo, polloH2);
 
     const tripaDiv = document.createElement('div');
     tripaDiv.classList.add('taco');
     const tripa = document.createElement('img');
-    tripa.src = "/restaurant/images/tripa.jpg";
-    pollo.alt = "tripa taco";
+    tripa.src = '/restaurant/images/tripa.jpg';
+    pollo.alt = 'tripa taco';
     const tripaH2 = document.createElement('h2');
-    tripaH2.textContent = "Tripa";
+    tripaH2.textContent = 'Tripa';
     tripaDiv.append(tripa, tripaH2);
 
     const alPastorDiv = document.createElement('div');
     alPastorDiv.classList.add('taco');
     const alPastor = document.createElement('img');
-    alPastor.src = "/restaurant/images/al-pastor.jpg";
-    alPastor.alt = "al pastor taco";
+    alPastor.src = '/restaurant/images/al-pastor.jpg';
+    alPastor.alt = 'al pastor taco';
     const alPastorH2 = document.createElement('h2');
-    alPastorH2.textContent = "Al Pastor";
+    alPastorH2.textContent = 'Al Pastor';
     alPastorDiv.append(alPastor, alPastorH2);
 
     const asadaDiv = document.createElement('div');
     asadaDiv.classList.add('taco');
     const asada = document.createElement('img');
-    asada.src = "/restaurant/images/asada.jpg";
-    asada.alt = "asada taco";
+    asada.src = '/restaurant/images/asada.jpg';
+    asada.alt = 'asada taco';
     const asadaH2 = document.createElement('h2');
-    asadaH2.textContent = "Asada";
+    asadaH2.textContent = 'Asada';
     asadaDiv.append(asada, asadaH2);
 
     const bucheDiv = document.createElement('div');
     bucheDiv.classList.add('taco');
     const buche = document.createElement('img');
-    buche.src = "/restaurant/images/buche.png";
-    buche.alt = "buche taco";
+    buche.src = '/restaurant/images/buche.png';
+    buche.alt = 'buche taco';
     const bucheH2 = document.createElement('h2');
-    bucheH2.textContent = "Buche";
+    bucheH2.textContent = 'Buche';
     bucheDiv.append(buche, bucheH2);
 
     foregroundContainer.append(carnitasDiv, chorizoDiv, suaderoDiv, polloDiv, tripaDiv, alPastorDiv, asadaDiv, bucheDiv);
 
 
-    const emptyForegroundContainer = document.querySelector(".foreground-container");
+    const emptyForegroundContainer = document.querySelector('.foreground-container');
     emptyForegroundContainer.replaceWith(foregroundContainer);
 
     const style = `     * {
@@ -231,22 +231,22 @@ const renderMenuPage = () => {
     
    `;
 
-  const documentStyles = document.querySelector("style");
-  documentStyles.innerHTML = style;
+    const documentStyles = document.querySelector('style');
+    documentStyles.innerHTML = style;
 
-  const tacos = document.querySelectorAll("div.taco");
-  for (let taco of tacos) {
-    taco.addEventListener("mouseover", makeDivWhite);
-    taco.addEventListener("mouseout", makeDivBlack);
-  }
+    const tacos = document.querySelectorAll('div.taco');
+    for (let taco of tacos) {
+        taco.addEventListener('mouseover', makeDivWhite);
+        taco.addEventListener('mouseout', makeDivBlack);
+    }
 
-  function makeDivWhite() {
-    this.classList.add("white");
-  }
+    function makeDivWhite() {
+        this.classList.add('white');
+    }
 
-  function makeDivBlack() {
-    this.classList.remove("white");
-  }
+    function makeDivBlack() {
+        this.classList.remove('white');
+    }
 };
 
 export default renderMenuPage;
