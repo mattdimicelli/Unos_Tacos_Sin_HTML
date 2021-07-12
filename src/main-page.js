@@ -79,7 +79,7 @@ const renderMainPage = () => {
  
 
   const contentDiv = document.querySelector("div#content");
-  contentDiv.append(backgroundContainer);
+  contentDiv.replaceWith(backgroundContainer);
 
   const style = `
   * {

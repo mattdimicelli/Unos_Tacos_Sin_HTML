@@ -126,7 +126,7 @@ const renderMenuPage = () => {
     bucheDiv.classList.add('taco');
     foregroundContainer.append(bucheDiv);
     const buche = document.createElement('img');
-    buche.src = "/restaurant/images/buche.jpg";
+    buche.src = "/restaurant/images/buche.png";
     buche.alt = "buche taco";
     const bucheH2 = document.createElement('h2');
     bucheH2.textContent = "Buche";
@@ -148,7 +148,7 @@ const renderMenuPage = () => {
 
 
   const contentDiv = document.querySelector("div#content");
-  contentDiv.append(backgroundContainer);
+  contentDiv.replaceWith(backgroundContainer);
 
   const style = `     * {
         box-sizing: border-box;
