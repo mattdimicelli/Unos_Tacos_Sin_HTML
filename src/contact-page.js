@@ -75,28 +75,8 @@ const renderContactPage = () => {
     githubLink.append(githubLogo);
     footer.append(githubLink);
 
-  const html = `
-    <div class="background-container">
-    <header>
-            <h1><span style="color: red;">El </span><span style="color: white;">Gri</span><span style="color: blue;">ngo's </span><span style="color: green;">MEXI</span><span style="color: white;">CAN </span><span style="color: red;">Tacos</span></h1>
-            <ul class="tabs">
-                <li class="home">Home</li>
-                <li class="menu">Menu</li>
-                <li class="contact">Contact</li>
-            </ul>
-        </header> 
-    <div class="foreground-container">
-        <h2><span>Phone:</span> 561-123-3456</h2>
-        <h2><span>Address:</span> On the beach at the end of S 39th St in Mexico Beach, FL, 32456</h2> 
-        <img src="/restaurant/images/mexico-beach.png" />
-    </div>
-    <footer>
-        <span class="copyright">Copyright © 2021 mattdimicelli</span>
-        <a href="https://github.com/mattdimicelli"><img src="/restaurant/images/GitHub-Mark-32px.png" alt="github logo" /></a>
-    </footer>
-</div>`;
   const contentDiv = document.querySelector("div#content");
-  contentDiv.innerHTML = html;
+  contentDiv.append(backgroundContainer);
 
   const style = `
     * {

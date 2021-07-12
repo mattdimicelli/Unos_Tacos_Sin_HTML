@@ -79,7 +79,7 @@ const renderMainPage = () => {
  
 
   const contentDiv = document.querySelector("div#content");
-  contentDiv.innerHTML = html;
+  contentDiv.append(backgroundContainer);
 
   const style = `
   * {
