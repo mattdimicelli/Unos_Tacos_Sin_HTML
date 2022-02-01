@@ -20,8 +20,8 @@ The complete design requirements from the The Odin Project curriculum can be see
 
 ### Links
 
-- [Live site](https://mattdimicelli.github.io/restaurant/)
-- [Repo](https://github.com/mattdimicelli/restaurant)
+- [Live site](https://mattdimicelli.github.io/Unos_Tacos_Sin_HTML/)
+- [Repo](https://github.com/mattdimicelli/Unos_Tacos_Sin_HTML/)
 
 ## My process
 
