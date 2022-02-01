@@ -10,7 +10,7 @@ const renderMainPage = () => {
     const spanishH2 = document.createElement('h2');
     spanishH2.textContent = '¡Los mejores tacos en el otro lado!';
     const flags = document.createElement('img');
-    flags.src = '/restaurant/images/flags.png';
+    flags.src = '/Unos_Tacos_Sin_HTML/images/flags.png';
     flags.alt = 'an american flag on the left and a mexican flag on the right';
     const englishVisit = document.createElement('p');
     englishVisit.textContent = 'Visit us all week from 6pm to 2am!';
@@ -45,7 +45,7 @@ p {
 }
 
 .background-container {
-  background-image: url('/restaurant/images/taco-plancha.jpg');
+  background-image: url('/Unos_Tacos_Sin_HTML/images/taco-plancha.jpg');
   background-size: cover;
   height: 100vh;
   position: absolute;
