@@ -58,7 +58,7 @@ p {
 .background-container {
     background-image: url('/Unos_Tacos_Sin_HTML/images/taco-plancha.jpg');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     left: 0;
     top: 0;
