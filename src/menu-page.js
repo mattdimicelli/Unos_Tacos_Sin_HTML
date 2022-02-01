@@ -11,7 +11,7 @@ const renderMenuPage = () => {
     const carnitasDiv = document.createElement('div');
     carnitasDiv.classList.add('taco');
     const carnitas = document.createElement('img');
-    carnitas.src = '/restaurant/images/carnitas.jpg';
+    carnitas.src = '/Unos_Tacos_Sin_HTML/images/carnitas.jpg';
     carnitas.alt = 'carnitas taco';
     const carnitasH2 = document.createElement('h2');
     carnitasH2.textContent = 'Carnitas';
@@ -21,7 +21,7 @@ const renderMenuPage = () => {
     chorizoDiv.classList.add('taco');
     const chorizo = document.createElement('img');
     chorizo.alt = 'chorizo taco';
-    chorizo.src = '/restaurant/images/chorizo.jpg';
+    chorizo.src = '/Unos_Tacos_Sin_HTML/images/chorizo.jpg';
     const chorizoH2 = document.createElement('h2');
     chorizoH2.textContent = 'Chorizo';
     chorizoDiv.append(chorizo, chorizoH2);
@@ -29,7 +29,7 @@ const renderMenuPage = () => {
     const suaderoDiv = document.createElement('div');
     suaderoDiv.classList.add('taco');
     const suadero = document.createElement('img');
-    suadero.src = '/restaurant/images/suadero.jpg';
+    suadero.src = '/Unos_Tacos_Sin_HTML/images/suadero.jpg';
     suadero.alt = 'suadero taco';
     const suaderoH2 = document.createElement('h2');
     suaderoH2.textContent = 'Suadero';
@@ -38,7 +38,7 @@ const renderMenuPage = () => {
     const polloDiv = document.createElement('div');
     polloDiv.classList.add('taco');
     const pollo = document.createElement('img');
-    pollo.src = '/restaurant/images/pollo.jpg';
+    pollo.src = '/Unos_Tacos_Sin_HTML/images/pollo.jpg';
     pollo.alt = 'pollo taco';
     const polloH2 = document.createElement('h2');
     polloH2.textContent = 'Pollo';
@@ -47,7 +47,7 @@ const renderMenuPage = () => {
     const tripaDiv = document.createElement('div');
     tripaDiv.classList.add('taco');
     const tripa = document.createElement('img');
-    tripa.src = '/restaurant/images/tripa.jpg';
+    tripa.src = '/Unos_Tacos_Sin_HTML/images/tripa.jpg';
     pollo.alt = 'tripa taco';
     const tripaH2 = document.createElement('h2');
     tripaH2.textContent = 'Tripa';
@@ -56,7 +56,7 @@ const renderMenuPage = () => {
     const alPastorDiv = document.createElement('div');
     alPastorDiv.classList.add('taco');
     const alPastor = document.createElement('img');
-    alPastor.src = '/restaurant/images/al-pastor.jpg';
+    alPastor.src = '/Unos_Tacos_Sin_HTML/images/al-pastor.jpg';
     alPastor.alt = 'al pastor taco';
     const alPastorH2 = document.createElement('h2');
     alPastorH2.textContent = 'Al Pastor';
@@ -65,7 +65,7 @@ const renderMenuPage = () => {
     const asadaDiv = document.createElement('div');
     asadaDiv.classList.add('taco');
     const asada = document.createElement('img');
-    asada.src = '/restaurant/images/asada.jpg';
+    asada.src = '/Unos_Tacos_Sin_HTML/images/asada.jpg';
     asada.alt = 'asada taco';
     const asadaH2 = document.createElement('h2');
     asadaH2.textContent = 'Asada';
@@ -74,7 +74,7 @@ const renderMenuPage = () => {
     const bucheDiv = document.createElement('div');
     bucheDiv.classList.add('taco');
     const buche = document.createElement('img');
-    buche.src = '/restaurant/images/buche.png';
+    buche.src = '/Unos_Tacos_Sin_HTML/images/buche.png';
     buche.alt = 'buche taco';
     const bucheH2 = document.createElement('h2');
     bucheH2.textContent = 'Buche';
@@ -107,7 +107,7 @@ const renderMenuPage = () => {
     }
 
     .background-container {
-        background-image: url('/restaurant/images/taco-plancha.jpg');
+        background-image: url('/Unos_Tacos_Sin_HTML/images/taco-plancha.jpg');
         background-size:cover;
         position: absolute;
         left: 0;

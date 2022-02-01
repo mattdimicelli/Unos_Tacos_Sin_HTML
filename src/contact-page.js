@@ -19,7 +19,7 @@ const renderContactPage = () => {
     addressSpan.textContent = 'Address:';
     addressH2.prepend(addressSpan);
     const map = document.createElement('img');
-    map.src = '/restaurant/images/mexico-beach.png';
+    map.src = '/Unos_Tacos_Sin_HTML/images/mexico-beach.png';
     foregroundContainer.append(phoneH2, addressH2, map);
 
 
@@ -56,7 +56,7 @@ p {
 }
 
 .background-container {
-    background-image: url('/restaurant/images/taco-plancha.jpg');
+    background-image: url('/Unos_Tacos_Sin_HTML/images/taco-plancha.jpg');
     background-size: cover;
     height: 100vh;
     position: absolute;

@@ -45,7 +45,7 @@ export default function renderHeaderAndFooter() {
     const githubLink = document.createElement('a');
     githubLink.href = 'https://github.com/mattdimicelli';
     const githubLogo = document.createElement('img');
-    githubLogo.src = '/restaurant/images/GitHub-Mark-32px.png';
+    githubLogo.src = '/Unos_Tacos_Sin_HTML/images/GitHub-Mark-32px.png';
     githubLogo.alt = 'github logo';
     githubLink.append(githubLogo);
     footer.append(copyright, githubLink);
